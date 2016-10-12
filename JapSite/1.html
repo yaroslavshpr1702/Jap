@@ -1,0 +1,213 @@
+﻿<html>
+<style>
+    body
+    {
+        background-image: url("0.jpg");
+        background-repeat: no-repeat;
+    }
+    h1 
+    {
+        color: white;
+        text-align: center;
+    }
+    table#content
+    {
+        border: 2px solid #2eb8b8;
+        border-radius: 8px;
+        border-collapse: collapse;
+    }
+    tr
+    {
+        border: 2px solid #003d4d;
+        border-radius: 8px;
+    }
+    td.menu 
+    {
+        border: 2px solid #00b3b3;
+        padding: 10px;
+        background: #00b3b3;
+    }
+    td.menu:hover 
+    {
+        border: 2px solid #008080;
+        background: #009999;
+    }
+    td.menu:active 
+    {
+        border: 2px solid #004d4d;
+        background: #006666;
+    }
+    td.content
+    {
+        color: white;
+        background-color: #006680;
+    }
+    td.answers
+    {
+        border: 2px solid #cc2900;
+        border-radius: 4px;
+        background: #cc2900;
+    }
+    td.answers:hover
+    {
+        border: 2px solid #991f00;
+        border-radius: 4px;
+        background: #b32400;
+    }
+    td.answers:active
+    {
+        border: 2px solid #991f00;
+        border-radius: 4px;
+        background: #801a00;
+    }
+    img
+    {
+        padding: 0px 0px;
+    }
+</style>
+<script type="text/javascript">
+    function show_text() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        var c4_elem = document.getElementById("c4");
+        var c5_elem = document.getElementById("c5");
+        var c6_elem = document.getElementById("c6");
+        c1_elem.style.display = 'block';
+        c2_elem.style.display = 'none';
+        c3_elem.style.display = 'none';
+        c4_elem.style.display = 'none';
+        c5_elem.style.display = 'none';
+        c6_elem.style.display = 'none';
+    }
+    function show_pic() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        var c4_elem = document.getElementById("c4");
+        var c5_elem = document.getElementById("c5");
+        var c6_elem = document.getElementById("c6");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'block';
+        c3_elem.style.display = 'none';
+        c4_elem.style.display = 'none';
+        c5_elem.style.display = 'none';
+        c6_elem.style.display = 'none';
+    }
+    function show_game() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        var c4_elem = document.getElementById("c4");
+        var c5_elem = document.getElementById("c5");
+        var c6_elem = document.getElementById("c6");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'none';
+        c3_elem.style.display = 'block';
+        c4_elem.style.display = 'none';
+        c5_elem.style.display = 'none';
+        c6_elem.style.display = 'none';
+    }
+    function show_qw2() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        var c4_elem = document.getElementById("c4");
+        var c5_elem = document.getElementById("c5");
+        var c6_elem = document.getElementById("c6");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'none';
+        c3_elem.style.display = 'block';
+        c4_elem.style.display = 'block';
+        c5_elem.style.display = 'none';
+        c6_elem.style.display = 'none';
+    }
+    function show_qw3() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        var c4_elem = document.getElementById("c4");
+        var c5_elem = document.getElementById("c5");
+        var c6_elem = document.getElementById("c6");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'none';
+        c3_elem.style.display = 'block';
+        c4_elem.style.display = 'block';
+        c5_elem.style.display = 'block';
+        c6_elem.style.display = 'none';
+    }
+    function show_win() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        var c4_elem = document.getElementById("c4");
+        var c5_elem = document.getElementById("c5");
+        var c6_elem = document.getElementById("c6");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'none';
+        c3_elem.style.display = 'block';
+        c4_elem.style.display = 'block';
+        c5_elem.style.display = 'block';
+        c6_elem.style.display = 'block';
+    }
+</script>
+<body>
+       <h1>Япония</h1>
+    <table width="100%">
+    	<tr>
+			<td class="menu" width="30%" onclick="show_text()"><center>Text</center></td>
+			<td class="menu" width="30%" onclick="show_pic()"><center>Map</center></td>
+            <td class="menu" width="30%" onclick="show_game()"><center>Викторина</center></td>
+		</tr>
+    </table>
+    <table border="1" width="100%" hight="100%" id="content">
+		
+		<tr>
+			<td class="content" colspan="3">
+            <div id="c1">Япо́ния — островное государство в Восточной Азии. Находится в Тихом океане к востоку от Японского моря, Китая, Северной и Южной Кореи, России. Занимает территорию от Охотского моря на севере до Восточно-Китайского моря и Тайваня на юге страны.
+
+Япония расположена на Японском архипелаге, состоящем из 6852 островов. Четыре крупнейших острова — Хонсю, Хоккайдо, Кюсю и Сикоку — составляют 97 % общей площади архипелага. Большинство островов горные, многие вулканические. Высшая точка Японии — вулкан Фудзияма (3776 м). С населением более 126 миллионов человек Япония занимает десятое место в мире. Большой Токио, включающий в себя столицу Японии Токио и несколько близлежащих префектур, с населением более 30 миллионов человек является крупнейшей городской агломерацией в мире.
+
+Являясь великой экономической державой, Япония занимает третье место в мире по номинальному ВВП и четвёртое по ВВП, рассчитанному по паритету покупательной способности. Япония является четвёртым по величине экспортёром и шестым по величине импортёром</div>
+            <div id="c2" style="display:none"><div id="map"  style="width:100%;height:800px;background:yellow"></div>
+
+            <script>
+    		function myMap() {
+			  var mapCanvas = document.getElementById("map");
+			  var mapOptions = {
+			    center: new google.maps.LatLng(51.5, -0.2),
+			    zoom: 10
+			  }
+			  var map = new google.maps.Map(mapCanvas, mapOptions);
+			}
+			</script>
+
+			<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+            <div id="c3" style="display:none">Когда американский коммодор Мэттью Перри, прибывший на Чёрных кораблях, вынудил Японию прекратить политику изоляции?</div></td>
+		<tr>
+            <td class="answers" width="30%"><div id="c3"><center>В 1845</center></div></td>
+            <td class="answers" width="30%" onclick="show_qw2()"><div id="c3"><center>В 1854</center></div></td>
+            <td class="answers" width="30%"><div id="c3"><center>В 1872</center></div></td>
+        </tr>
+        <tr>
+            <td class="content" width="100%" colspan="3"><div id="c4" style="display:none">Сколько процентов составляет возвышенности, низкие и средневысотные горы Японии?</div></td>
+        </tr>
+        <tr>
+            <td class="answers" width="30%" onclick="show_qw3()"><div id="c4"><center>75 %</center></div></td>
+            <td class="answers" width="30%"><div id="c4"><center>25 %</center></div></td>
+            <td class="answers" width="30%"><div id="c4"><center>87 %</center></div></td>
+        </tr>
+        <tr>
+            <td class="content" width="100%" colspan="3"><div id="c5" style="display:none">Сколько людей по состоянию на 1 марта 2015 года проживает в Японии?</div></td>
+        </tr>
+        <tr>
+            <td class="answers" width="30%"><div id="c5"><center>1 373 541 278</center></div></td>
+            <td class="answers" width="30%"><div id="c5"><center>127 345 000</center></div></td>
+            <td class="answers" width="30%" onclick="show_win()"><div id="c5"><center>126 910 000</center></div></td>
+        </tr>
+        <tr>
+            <td class="content" width="100%" colspan="3"><div id="c6" style="display:none">Спасибо, что вы приняли участие в этой викторине.</div></td>
+        </tr>
+	</table>
+</body>
+</html>

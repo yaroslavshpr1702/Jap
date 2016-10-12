@@ -1,0 +1,179 @@
+﻿<html>
+<style>
+    body
+    {
+        background-image: url("0.jpg");
+        background-repeat: no-repeat;
+    }
+    h1 
+    {
+        color: white;
+        text-align: center;
+    }
+    table#content
+    {
+        border: 2px solid #2eb8b8;
+        border-radius: 8px;
+        border-collapse: collapse;
+    }
+    tr
+    {
+        border: 2px solid #003d4d;
+        border-radius: 8px;
+    }
+    td.menu 
+    {
+        border: 2px solid #e60000;
+        padding: 10px;
+        background: #ff0000;
+    }
+    td.menu:hover 
+    {
+        border: 2px solid #990000;
+        background: #b30000;
+    }
+    td.menu:active 
+    {
+        border: 2px solid #4d0000;
+        background: #660000;
+    }
+    td.content
+    {
+        color: white;
+        background: rgba(0, 111, 183, 0.6);
+    }
+    td.answers
+    {
+        border: 2px solid #cc2900;
+        border-radius: 4px;
+        background: #cc2900;
+    }
+    td.answers:hover
+    {
+        border: 2px solid #991f00;
+        border-radius: 4px;
+        background: #b32400;
+    }
+    td.answers:active
+    {
+        border: 2px solid #991f00;
+        border-radius: 4px;
+        background: #801a00;
+    }
+    img
+    {
+        padding: 0px 0px;
+    }
+</style>
+<script type="text/javascript">
+    function show_text() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        c1_elem.style.display = 'block';
+        c2_elem.style.display = 'none';
+        c3_elem.style.display = 'none';
+    }
+    function show_pic() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'block';
+        c3_elem.style.display = 'none';
+    }
+    function show_game() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'none';
+        c3_elem.style.display = 'block';
+    }
+</script>
+<body>
+
+       <h1>Япония</h1>
+    <table width="100%">
+    	<tr>
+			<td class="menu" width="30%" onclick="show_text()"><center>Text</center></td>
+			<td class="menu" width="30%" onclick="show_pic()"><center>Map</center></td>
+            <td class="menu" width="30%" onclick="show_game()"><center>Викторина</center></td>
+		</tr>
+    </table>
+    <table border="1" width="100%" id="content">
+		
+		<tr>
+			<td class="content" colspan="3">
+            <div id="c1">Япо́ния — островное государство в Восточной Азии. Находится в Тихом океане к востоку от Японского моря, Китая, Северной и Южной Кореи, России. Занимает территорию от Охотского моря на севере до Восточно-Китайского моря и Тайваня на юге страны.
+
+Япония расположена на Японском архипелаге, состоящем из 6852 островов. Четыре крупнейших острова — Хонсю, Хоккайдо, Кюсю и Сикоку — составляют 97 % общей площади архипелага. Большинство островов горные, многие вулканические. Высшая точка Японии — вулкан Фудзияма (3776 м). С населением более 126 миллионов человек Япония занимает десятое место в мире. Большой Токио, включающий в себя столицу Японии Токио и несколько близлежащих префектур, с населением более 30 миллионов человек является крупнейшей городской агломерацией в мире.
+
+Являясь великой экономической державой, Япония занимает третье место в мире по номинальному ВВП и четвёртое по ВВП, рассчитанному по паритету покупательной способности. Япония является четвёртым по величине экспортёром и шестым по величине импортёром</div>
+            <div id="c2" style="display:none"><div id="map"  style="width:100%;height:800px;background:yellow"></div></div>
+
+            <script>
+    		function myMap() {
+ 				var myCenter = new google.maps.LatLng(35.708607653285505,139.73236083984375);
+ 				var mapCanvas = document.getElementById("map");
+ 				var mapOptions = {center: myCenter, zoom: 5};
+ 				var map = new google.maps.Map(mapCanvas, mapOptions);
+ 				var marker = new google.maps.Marker({position:myCenter});
+ 				marker.setMap(map);
+				}
+			</script>
+
+			<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+            <div id="c3" style="display:none"><p>Когда американский коммодор Мэттью Перри, прибывший на Чёрных кораблях, вынудил Японию прекратить политику изоляции?</p><br>
+		
+            <p><input name="q1" type="radio" value="0">В 1845<br>
+            <input name="q1" type="radio" value="1">В 1854<br>
+            <input name="q1" type="radio" value="0">В 1872</p><br>
+
+            <!-- В 1854 -->
+        
+            <p>Сколько процентов составляет возвышенности, низкие и средневысотные горы Японии?</p>
+        
+            <p><input name="q2" type="radio" value="1">75 %<br>
+            <input name="q2" type="radio" value="0">25 %<br>
+            <input name="q2" type="radio" value="0">87 %<br>
+
+            <!-- 75 % -->
+        
+            <p>Сколько людей по состоянию на 1 марта 2015 года проживает в Японии?</p>
+
+            <p><input name="q3" type="radio" value="0">1 373 541 278<br>
+            <input name="q3" type="radio" value="0">127 345 000<br>
+            <input name="q3" type="radio" value="1">126 910 000</p><br>
+
+            <!-- 126 910 000 -->
+
+            <script>
+            function coins() {
+            	var q1 = document.getElementById("q1");
+            	if (q1 == 1) q1 = 1;
+            	var q2 = document.getElementById("q2");
+            	if (q2 == 1) q2 = 1;
+            	var q3 = document.getElementById("q3");
+            	if (q3 == 1) q3 = 1;
+            	var coins = q1 + q2 + q3;
+            	document.getElementById("an").innerHTML = "Вы набрали " + coins + " баллов"
+            }
+            </script>
+        
+            <input type="button" id="check" onclick="coins()" value="Проверь себя">
+
+			<p id="an"></p>
+
+			<script>
+			function checkJap() {
+ 			   var x = document.getElementById("check").value;
+ 			   document.getElementById("an").innerHTML = x;
+			}
+            </script>
+            </td>
+        </tr>
+	</table>
+</body>
+</html>

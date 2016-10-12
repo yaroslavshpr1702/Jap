@@ -1,0 +1,80 @@
+﻿<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<!--<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>-->
+</head>
+<script type="text/javascript">
+    ymaps.ready(init);
+        var myMap;
+
+        function init() {
+            myMap = new ymaps.Map("map", {
+                center: [55.76, 37.64],
+                zoom: 7
+            });
+        }
+        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+            hintContent: 'Москва!',
+            balloonContent: 'Столица России'
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+</script>
+<body>
+
+       <h1>Япония</h1>
+    <table width="100%">
+    	<tr>
+			<td class="menu" width="30%" onclick="show_text()"><center>Text</center></td>
+			<td class="menu" width="30%" onclick="show_pic()"><center>Map</center></td>
+            <td class="menu" width="30%" onclick="show_game()"><center>Викторина</center></td>
+		</tr>
+    </table>
+
+    <table border="1" width="100%" id="content">
+		<tr>
+			<td class="content" colspan="3">
+            <div id="c1">Япо́ния — островное государство в Восточной Азии. Находится в Тихом океане к востоку от Японского моря, Китая, Северной и Южной Кореи, России. Занимает территорию от Охотского моря на севере до Восточно-Китайского моря и Тайваня на юге страны.
+
+<p>Япония расположена на Японском архипелаге, состоящем из 6852 островов. Четыре крупнейших острова — Хонсю, Хоккайдо, Кюсю и Сикоку — составляют 97 % общей площади архипелага. Большинство островов горные, многие вулканические. Высшая точка Японии — вулкан Фудзияма (3776 м). С населением более 126 миллионов человек Япония занимает десятое место в мире. Большой Токио, включающий в себя столицу Японии Токио и несколько близлежащих префектур, с населением более 30 миллионов человек является крупнейшей городской агломерацией в мире.</p>
+
+<p>Являясь великой экономической державой, Япония занимает третье место в мире по номинальному ВВП и четвёртое по ВВП, рассчитанному по паритету покупательной способности. Япония является четвёртым по величине экспортёром и шестым по величине импортёром</p></div>
+            <div id="c2" style="display:none"><div id="map" style="width: 100%; height: 750px"></div></div>
+
+
+            <div id="c3" style="display:none"><p>Когда американский коммодор Мэттью Перри, прибывший на Чёрных кораблях, вынудил Японию прекратить политику изоляции?</p><br>
+		
+            <p><input name="q1" type="radio" value="0">В 1845<br>
+            <input name="q1" type="radio" value="1">В 1854<br>
+            <input name="q1" type="radio" value="0">В 1872</p><br>
+
+            <!-- В 1854 -->
+        
+            <p>Сколько процентов составляет возвышенности, низкие и средневысотные горы Японии?</p>
+        
+            <p><input name="q2" type="radio" value="1">75 %<br>
+            <input name="q2" type="radio" value="0">25 %<br>
+            <input name="q2" type="radio" value="0">87 %<br>
+
+            <!-- 75 % -->
+        
+            <p>Сколько людей по состоянию на 1 марта 2015 года проживает в Японии?</p>
+
+            <p><input name="q3" type="radio" value="0">1 373 541 278<br>
+            <input name="q3" type="radio" value="0">127 345 000<br>
+            <input name="q3" type="radio" value="1">126 910 000</p><br>
+
+            <!-- 126 910 000 -->
+
+            <input type="button" id="check" onclick="coins()" value="Проверь себя">
+
+			<p id="an"></p>
+
+            </td>
+        </tr>
+	</table>
+</body>
+</html>

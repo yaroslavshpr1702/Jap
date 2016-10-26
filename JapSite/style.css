@@ -1,0 +1,64 @@
+body
+    {
+        background-image: url("0.jpg");
+        background-repeat: no-repeat;
+    }
+    h1 
+    {
+        color: white;
+        text-align: center;
+    }
+    table#content
+    {
+        border: 2px solid #2eb8b8;
+        border-radius: 8px;
+        border-collapse: collapse;
+    }
+    tr
+    {
+        border: 2px solid #003d4d;
+        border-radius: 8px;
+    }
+    td.menu 
+    {
+        border: 2px solid #e60000;
+        padding: 10px;
+        background: #ff0000;
+    }
+    td.menu:hover 
+    {
+        border: 2px solid #990000;
+        background: #b30000;
+    }
+    td.menu:active 
+    {
+        border: 2px solid #4d0000;
+        background: #660000;
+    }
+    td.content
+    {
+        color: white;
+        background: rgba(0, 111, 183, 0.6);
+    }
+    td.answers
+    {
+        border: 2px solid #cc2900;
+        border-radius: 4px;
+        background: #cc2900;
+    }
+    td.answers:hover
+    {
+        border: 2px solid #991f00;
+        border-radius: 4px;
+        background: #b32400;
+    }
+    td.answers:active
+    {
+        border: 2px solid #991f00;
+        border-radius: 4px;
+        background: #801a00;
+    }
+    img
+    {
+        padding: 0px 0px;
+    }
